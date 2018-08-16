@@ -1,0 +1,35 @@
+.darcula-1 { /* Dark */
+    -fx-background-color: #2b2727;
+}
+
+.darcula-2 { /* Lighter */
+    -fx-background-color: #474444;
+}
+
+.darcula-3 { /* Even more lighter */
+    -fx-background-color: #676565;
+}
+
+.button {
+    -fx-background-color: #888888;
+    -fx-background-radius: 5px;
+}
+
+.button:pressed {
+    -fx-background-color: #666666;
+}
+
+.button-red {
+    -fx-background-color: #ff8888;
+    -fx-text-fill: #661111;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button-red:pressed {
+    -fx-background-color: #ff6666;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}

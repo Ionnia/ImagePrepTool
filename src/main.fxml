@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MainController"
+            prefHeight="600.0" prefWidth="800.0">
+    <right>
+        <VBox fx:id="vboxMenu" styleClass="darcula-2" alignment="TOP_CENTER">
+            <padding>
+                <Insets left="10" right="10" top="10" bottom="10"/>
+            </padding>
+            <HBox fx:id="hboxOpenFolder" styleClass="blue" spacing="10" alignment="TOP_CENTER">
+                <Button fx:id="btnOpenFolder" text="Open folder" minWidth="80" minHeight="25" styleClass="button-red"/>
+                <TextField fx:id="textFieldOpenFolder" minWidth="120" minHeight="25" styleClass="darcula-3"/>
+            </HBox>
+        </VBox>
+    </right>
+
+    <center>
+        <ScrollPane styleClass="darcula-3" minHeight="0">
+
+        </ScrollPane>
+    </center>
+
+    <stylesheets><URL value="@main.css"/></stylesheets>
+
+</BorderPane>
