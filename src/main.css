@@ -1,4 +1,4 @@
-.darcula-1 { /* Dark */
+.darcula-1, .darcula-text { /* Dark */
     -fx-background-color: #2b2727;
 }
 
@@ -10,26 +10,130 @@
     -fx-background-color: #676565;
 }
 
+.darcula-header {
+    -fx-text-fill: #bbbbbb;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.darcula-text {
+    -fx-text-fill: #bbbbbb;
+    -fx-font-size: 12px;
+}
+
 .button {
-    -fx-background-color: #888888;
-    -fx-background-radius: 5px;
-}
-
-.button:pressed {
-    -fx-background-color: #666666;
-}
-
-.button-red {
-    -fx-background-color: #ff8888;
-    -fx-text-fill: #661111;
+    -fx-background-color: #2b2727;
+    -fx-text-fill: #8b8787;
+    -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-background-radius: 5px;
 }
 
+.button:hover {
+    -fx-background-color: #302c2c;
+}
+
+.button:pressed {
+    -fx-background-color: #1b1717;
+}
+
+.button-red {
+    -fx-background-color: #c64e35;
+    -fx-text-fill: #551111;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button-red:hover {
+    -fx-background-color: #c0492e;
+}
+
 .button-red:pressed {
-    -fx-background-color: #ff6666;
+    -fx-background-color: #a62e15;
+}
+
+.button-green {
+    -fx-background-color: #16ad46;
+    -fx-text-fill: #114411;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button-green:hover {
+    -fx-background-color: #139d40;
+}
+
+.button-green:pressed {
+    -fx-background-color: #037d20;
 }
 
 .scroll-pane > .viewport {
     -fx-background-color: transparent;
+}
+
+.combo-box, .combo-box .list-cell {
+    -fx-background-color: #2b2727;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #bbbbbb;
+    -fx-border-radius: 5px;
+}
+
+.combo-box:hover, .combo-box:hover .list-cell, .combo-box .list-view {
+    -fx-background-color: #302c2c;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #676565;
+}
+
+.check-box {
+    -fx-background-color: #474444;
+    -fx-text-fill: #bbbbbb;
+    -fx-font-size: 12px;
+}
+
+.check-box .mark, .check-box .box {
+  -fx-background-color: #2b2727;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #676565;
+}
+
+.text-field {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #2b2727;
+}
+
+.text-area {
+    -fx-background-radius: 5px;
+}
+
+.text-area .scroll-bar, .corner, .decrement-button, .increment-button {
+    -fx-background-color: #2b2727;
+}
+
+.text-area .thumb, .decrement-arrow, .increment-arrow {
+    -fx-background-color: #676565;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+.progress-bar .track {
+    -fx-background-color: #2b2727;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #16ad46;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.label {
+    -fx-text-fill: #676565;
+    -fx-font-size: 12px;
 }

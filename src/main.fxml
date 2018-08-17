@@ -5,24 +5,69 @@
 
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="MainController"
             prefHeight="600.0" prefWidth="800.0">
     <right>
-        <VBox fx:id="vboxMenu" styleClass="darcula-2" alignment="TOP_CENTER">
+        <VBox fx:id="vBoxMenu" styleClass="darcula-2" spacing="15">
             <padding>
                 <Insets left="10" right="10" top="10" bottom="10"/>
             </padding>
-            <HBox fx:id="hboxOpenFolder" styleClass="blue" spacing="10" alignment="TOP_CENTER">
-                <Button fx:id="btnOpenFolder" text="Open folder" minWidth="80" minHeight="25" styleClass="button-red"/>
-                <TextField fx:id="textFieldOpenFolder" minWidth="120" minHeight="25" styleClass="darcula-3"/>
+            <!-- Open Folder -->
+            <HBox spacing="10" alignment="TOP_CENTER">
+                <Button fx:id="btnOpenFolder" text="Open folder" minWidth="90" minHeight="25" styleClass="button-green"
+                        onAction="#btnOpenFolderHandler"/>
+                <TextField fx:id="textFieldOpenFolder" minWidth="120" minHeight="25" styleClass="darcula-text"
+                    editable="false"/>
             </HBox>
+            <!-- Save to -->
+            <HBox spacing="10" alignment="TOP_CENTER">
+                <Button fx:id="btnSaveFolder" text="Save to" minWidth="90" minHeight="25" styleClass="button-green"
+                    onAction="#btnSaveFolderHandler"/>
+                <TextField fx:id="textFieldSaveFolder" minWidth="120" minHeight="25" styleClass="darcula-text"
+                           editable="false"/>
+            </HBox>
+            <!-- Save mode -->
+            <VBox spacing="10">
+                <Label text="Save mode:" styleClass="darcula-header"/>
+                <ComboBox fx:id="comboBoxMode" minWidth="150" minHeight="25" styleClass="darcula-3">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Cropped images"/>
+                            <String fx:value="Coords. single file"/>
+                            <String fx:value="Coords. multiple files"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <CheckBox fx:id="keepFolderStructureCheckbox" text="Keep folder structure" disable="true"/>
+            </VBox>
+
+            <HBox spacing="10">
+                <Button fx:id="btnNextImage" text="Next image" minWidth="90" minHeight="25"/>
+                <Button fx:id="btnSkipImage" text="Skip image" minWidth="90" minHeight="25"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Button fx:id="btnNextFolder" text="Next folder" minWidth="90" minHeight="25"/>
+                <Button fx:id="btnSkipFolder" text="Skip folder" minWidth="90" minHeight="25"/>
+            </HBox>
+
+            <VBox spacing="10">
+                <TextArea fx:id="textAreaOutput" styleClass="darcula-text" prefWidth="250" editable="false"/>
+                <StackPane>
+                    <ProgressBar fx:id="progressBar" progress="0.0" prefWidth="250"/>
+                    <Label fx:id="progressBarText"/>
+                </StackPane>
+            </VBox>
         </VBox>
     </right>
 
     <center>
-        <ScrollPane styleClass="darcula-3" minHeight="0">
+        <ScrollPane styleClass="darcula-1" minHeight="0">
 
         </ScrollPane>
     </center>
