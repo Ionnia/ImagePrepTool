@@ -21,14 +21,14 @@
             <HBox spacing="10" alignment="TOP_CENTER">
                 <Button fx:id="btnOpenFolder" text="Open folder" minWidth="100" minHeight="25" styleClass="button-green"
                         onAction="#btnOpenFolderHandler"/>
-                <TextField fx:id="textFieldOpenFolder" minWidth="120" minHeight="25" styleClass="darcula-text"
+                <TextField fx:id="textFieldOpenFolder" minWidth="160" minHeight="25" styleClass="darcula-text"
                     editable="false"/>
             </HBox>
             <!-- Save to -->
             <HBox spacing="10" alignment="TOP_CENTER">
                 <Button fx:id="btnSaveFolder" text="Save to" minWidth="100" minHeight="25" styleClass="button-green"
                     onAction="#btnSaveFolderHandler"/>
-                <TextField fx:id="textFieldSaveFolder" minWidth="120" minHeight="25" styleClass="darcula-text"
+                <TextField fx:id="textFieldSaveFolder" minWidth="160" minHeight="25" styleClass="darcula-text"
                            editable="false"/>
             </HBox>
             <!-- Save mode -->
@@ -57,7 +57,7 @@
             </HBox>
 
             <VBox spacing="10">
-                <TextArea fx:id="textAreaOutput" styleClass="darcula-text" prefWidth="250" editable="false"/>
+                <TextArea fx:id="textAreaOutput" styleClass="darcula-text" prefWidth="270" editable="false"/>
                 <StackPane>
                     <ProgressBar fx:id="progressBar" progress="0.0" prefWidth="270"/>
                     <Label fx:id="progressBarText" styleClass="label-text"/>
