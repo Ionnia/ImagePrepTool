@@ -11,7 +11,7 @@
 }
 
 .darcula-header {
-    -fx-text-fill: #bbbbbb;
+    -fx-text-fill: #8b8787;
     -fx-font-weight: bold;
     -fx-font-size: 14px;
 }
@@ -133,7 +133,7 @@
     -fx-background-insets: 0 0 0 0;
 }
 
-.label {
+.label-text {
     -fx-text-fill: #676565;
     -fx-font-size: 12px;
 }

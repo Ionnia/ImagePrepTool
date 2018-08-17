@@ -60,7 +60,7 @@
                 <TextArea fx:id="textAreaOutput" styleClass="darcula-text" prefWidth="250" editable="false"/>
                 <StackPane>
                     <ProgressBar fx:id="progressBar" progress="0.0" prefWidth="270"/>
-                    <Label fx:id="progressBarText"/>
+                    <Label fx:id="progressBarText" styleClass="label-text"/>
                 </StackPane>
             </VBox>
         </VBox>
